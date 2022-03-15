@@ -1,0 +1,15 @@
+api = "0.5"
+
+[buildpack]
+id = "sdiak/aws-cli"
+version = "0.0.1"
+name = "AWS CLI buildpack"
+
+[[stacks]]
+id = "heroku-18"
+
+[[stacks]]
+id = "heroku-20"
+
+[[stacks]]
+id = "io.buildpacks.stacks.bionic"

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -eo pipefail
+
+# Passed in args
+plan_path=$2
+
+# Declare dependencies
+cat >> "${plan_path}" <<EOL
+
+# Provided dependencies
+[[provides]]
+name = "aws-cli"
+
+# Required dependencies
+[[requires]]
+name = "aws-cli"
+EOL
